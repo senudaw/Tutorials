@@ -14,7 +14,12 @@ public class HelloController {
         return "Hello World";
     }
 
-    @GetMapping("/hello")
+    @GetMapping("/goodbye")
+    public String goodbye() {
+        return "Goodbye from Spring Boot!";
+    }
+
+    @GetMapping("/status")
     public String status(){
         return "API is running";
     }
